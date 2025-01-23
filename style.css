@@ -1,0 +1,561 @@
+/*Commom Style*/
+
+body{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    /* width: 80%; */
+    margin: 20px auto 0px auto;
+  }
+  
+  
+  
+  .orange{
+      color: #FEA301;
+  }
+  
+  .sky-blue{
+      color: #01ACFD;
+  }
+  
+  
+  /*Nav Bar Design*/
+  
+  header{
+    width: 90%;
+    margin: auto;
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+  }
+  
+  .nav-image{
+      display: flex;
+  }
+  
+  .navh1{
+      font-weight: bold;
+      font-size: 32px;
+      
+  }
+  .navlist{
+    display: flex;
+    
+  }
+  
+  .nav-li1{
+      margin-right: 32px;
+      font-weight: bold;
+      color: orange;
+      font-size: 20px;
+  }
+  
+  .nav-li2{
+      margin-right: 32px;
+      font-weight: medium;
+      color: #01ACFD;
+      font-size: 20px;
+  }
+  
+  .nav-li3{
+      margin-right: 32px;
+      font-weight: medium;
+      color: #05D4DF ;
+      font-size: 20px;
+  }
+  
+  .nav-li4{
+      margin-right: 32px;
+      font-weight: medium;
+      color: #5D58EF;
+      font-size: 20px;
+  }
+  
+  ul li {
+      list-style: none;
+      
+  }
+  
+  .navbtn{
+  
+  border-radius: 12px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #FEA301;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  }
+  .navicon{
+    display: none;
+}
+  /* Responsive navbar */
+  
+  @media  screen and (max-width: 576px) {
+    body{
+        width: 100%;
+    }
+    .navlist{
+        display: none;
+    }
+    .navbtn{
+        display: none;
+    }
+    .navh1{
+        display: none;
+    }
+    .navicon{
+        display: block;
+    }
+    nav{
+        border-bottom: 1px solid #FEA301 ;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+
+    }
+    header{
+        width: 100%;
+    }
+    
+    
+  }
+
+  
+/*Banner Design*/
+.banner{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bannerh1{
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.banner-btn{
+    border-radius: 12px;
+    padding: 10px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    }
+
+
+    /* Responsive Banner Part */
+    @media  screen and (max-width: 576px){
+        .banner{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            
+        
+        }
+
+        .banner_image{
+            width: 100%;
+        }
+        .banner-content{
+        text-align: center;
+        }
+        .bannerh1{
+        font-size: 32px;
+        }
+        .bannerp{
+            font-size: 14px;
+        }
+    }
+
+    
+    /*Standard Curriculum Design*/
+
+    main{
+        
+        background-image: url(../Images/bg.png);
+        /* background-size: cover; */
+        
+       
+    }
+    .curriculum-title{
+        font-weight: bold;
+        font-size: 46px;
+        text-align: center;
+
+    }
+
+
+    
+    .section-items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 28px;
+        width: 90%;
+        margin: 60px auto 0px auto;
+      
+    }
+
+    .curriculum_card1
+    {
+            border-radius: 19px;
+            text-align: center;
+            background-image: linear-gradient(#DEF5FF,white);
+            align-content: center;
+            border: 1px solid #DEF5FF;
+            padding: 100px 25px;
+            box-shadow: inset 0 0 20px #DEF5FF;
+            
+          }
+
+          .curriculum_card_h1{
+            font-weight: bold;
+            font-style: 25px;
+          }
+
+          .curriculum_card_p{
+            font-weight: medium;
+            font-size: 15px;
+          }
+
+        .linkcolor1{
+            font-weight: bold;
+            font-size: 15px;
+            color: #64C8FF;
+          }
+
+         
+
+        .curriculum_card2{
+             
+            border-radius: 19px;
+            margin: auto;
+            text-align: center;
+            background-image: linear-gradient(#FFF4DC,white);
+            align-content: center;
+            border: 1px solid #FFF4DC;
+            padding: 100px 25px;
+            box-shadow: inset 0 0 20px #FFF4DC;
+          }
+
+
+          .linkcolor2{
+            font-weight: bold;
+            font-size: 15px;
+            color: #F0AA00;
+       }
+
+          .curriculum_card3{
+               
+            border-radius: 19px;
+            margin: auto;
+            text-align: center;
+            background-image: linear-gradient(#F2E8FF,white);
+            align-content: center;
+            border: 1px solid #F2E8FF;
+            padding: 100px 25px;
+            box-shadow: inset 0 0 20px #F2E8FF;
+          }
+
+          .linkcolor3{
+            font-weight: bold;
+            font-size: 15px;
+            color: #8700FF;
+          }
+
+
+    div a{
+        text-decoration: none;
+    }
+
+
+   
+
+
+
+    /*Responsive Standard Curriculum Design*/
+
+    @media  screen and (max-width: 576px){
+        
+    .section-items{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+      
+    }
+        .curriculum-title{
+            font-size: 26px;
+        }
+        .curriculum_card_h1{
+            font-size: 16px;
+        }
+        .curriculum_card_p{
+            font-size: 10px;
+        }
+        .linkcolor1{
+            font-size: 10px;
+        }
+        .linkcolor2{
+            font-size: 10px;  
+        }
+        .linkcolor3{
+            font-size: 10px;
+        }
+    } 
+    
+    /* Arrow part start */
+        .arrowimg{
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            gap: 10px;
+            
+        }
+        .arrow1{
+            color: #fea301;
+        }
+        .arrow1:hover{
+            
+            color: #01ACFD ;
+        }
+        .arrow2{
+            color: #fea301;
+        }
+        .arrow2:hover{
+            
+            color: #01ACFD ;
+        }
+
+        @media  screen and (max-width: 576px){
+            .arrowimg{
+                display: none;
+            }
+        }
+       
+        
+        
+    /* Our stories Section start */
+    .story{
+        background-image:url(../Images/bg.png),linear-gradient(white,#f3d19783);;
+        width: 100%;
+        padding-bottom: 60px;
+        
+        
+    }
+    .storyh1{
+        font-weight: bold;
+        font-size: 46px;
+        text-align: center;
+        padding: 50px 0px;
+    }
+    .storymain{
+        display: flex;
+        gap: 19px;
+        width: 90%;
+        margin: 0px auto;
+        justify-content: space-between;
+    }
+    .storycards1{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: white;
+        border-radius: 16px;
+        gap: 19px;
+        }
+    .storycards1img{
+        width: 100%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+    .storydate1{
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        background-color: #3CD8E8;
+        border-radius: 48px;
+        padding: 10px 20px;
+        border: none;
+        width: 40%;
+        margin: -34px auto 0px 25px;
+    }
+   .storycards1h1{
+        font-weight: bold;
+        font-size: 24px;
+        text-align: left;
+        padding: 20px;
+        
+    }
+    .storycard1p{
+        font-weight: medium;
+        font-size: 16px;
+        text-align: left;
+        padding: 20px;
+    }
+
+
+    .storycards2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 19px;
+    }
+    .storycard1{
+        background-color: white;
+        border-radius: 16px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 19px;
+       
+    }
+    .story-card1-img{
+        width: 100%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+    .story-card1-h2{
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding: 10px 0px;
+    }
+    .storydate2{
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        background-color: #95B226;
+        border-radius: 48px;
+        padding: 10px 20px;
+        border: none;
+        width: 50%;
+        margin: -34px auto 0px auto;
+        
+    }
+    .storydate3{
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        background-color: #5D58F0;
+        border-radius: 48px;
+        padding: 10px 20px;
+        border: none;
+        width: 50%;
+        margin: -34px auto 0px auto;
+        
+    }
+    
+
+    .viewbtn{
+        display: flex;
+        justify-content: center;
+        padding-top: 80px ;
+    }
+
+
+    /*Responsive Our Stories Section*/
+    @media  screen and (max-width: 576px){
+        .storycards1{
+            display: none;
+        }
+        .storycards2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 19px;
+        }
+    }
+
+    /*Footer Style*/
+  
+    .footer{
+        background-color: #01ACFD;
+        width: 100%;
+        
+    }
+    .footermainpart{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+        padding: 80px 0px;
+        
+    }
+    .footerlogo{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .footerimg{
+        background-color:none;
+        
+    }
+    .footerh1{
+        font-weight: bold;
+        font-size: 42px;
+        color: white;
+    }
+    .footertextp{
+        color: white;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .footerlist{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+    .abouth2{
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .footerul{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding-inline-start: 0px;
+        color: white;
+        font-weight: medium;
+        font-size: 20px;
+    }
+    .footersocial{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+    }
+    .keeph2{
+        color: white;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+
+    /*Responsive Footer Style*/
+
+    @media  screen and (max-width: 576px){
+        .footermainpart{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+    }
+
+
+    
